@@ -65,7 +65,7 @@ def search(grid, dictionary):
     neighbours = all_grid_neighbours(grid)
     paths = []
     
-    def do_search(path):
+    def do_search(path)
         word = path_to_word(grid, path)
         if word in dictionary:
             paths.append(path)
@@ -78,14 +78,4 @@ def search(grid, dictionary):
         
     words = []
     for path in paths:
-        words.append(path_to_word(grid, path))
-    return set(words)
-    
-def get_dictionary(dictionary_file):
-    """
-    Load dictionary file
-    """
-    with open(dictionary_file) as f:
-        return [w.strip().upper() for w in f]
-        
-     
+        words.append(p)
